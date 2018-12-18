@@ -1,0 +1,10 @@
+certifi==2018.11.29
+chardet==3.0.4
+docker-py==1.10.6
+docker-pycreds==0.4.0
+idna==2.8
+pkg-resources==0.0.0
+requests==2.21.0
+six==1.12.0
+urllib3==1.24.1
+websocket-client==0.54.0
