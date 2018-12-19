@@ -20,6 +20,8 @@ services:
     expose:
       - 80
     restart: always
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
     environment:
       VIRTUAL_HOST: domain
       WORDPRESS_DB_HOST: db_node_domain:3306
