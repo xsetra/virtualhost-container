@@ -18,11 +18,7 @@ services:
     restart: always
     volumes:
       - ./wp-content:/var/www/html/wp-content
-    environment:
-      VIRTUAL_HOST: domain
-      WORDPRESS_DB_HOST: db_node_domain:3306
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: pass
+    env_file: ./envs/env_wordpress
     container_name: wordpress
 volumes:
   db_data:
